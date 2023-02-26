@@ -1,0 +1,71 @@
+.header {
+  background-image: linear-gradient(to right, rgb(0 0 0 / .8), rgb(0 0 0 / .7)), url(../public/img/header.jpg);
+  background-size: cover;
+  background-position: center center;
+  padding: 8rem 0;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+    .flex {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+}
+
+.iconos {
+  color: var(--white);
+  display: flex;
+  gap: 2rem;
+}
+
+.barra {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1e40af;
+}
+
+@media (min-width: 768px) {
+  .barra {
+      flex-direction: row;
+      justify-content: space-around;
+  }
+}
+
+.navegacion {
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+@media (min-width: 768px) {
+  .navegacion {
+      margin: 0;
+      justify-content: space-evenly;
+  }
+}
+
+.navegacion a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 1.5rem;
+  transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+  color: var(--white);
+}
+
+.navegacion a:hover,
+.navegacion .active {
+  color: var(--black);
+  background-color: var(--white);
+}
+
